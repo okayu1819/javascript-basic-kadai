@@ -16,4 +16,22 @@ $(() => {
         // boxクラスの要素を表示/非表示する
         $('.box').fadeToggle();
     });
+
+    // id属性がslideUpの要素がクリックされたら
+    $('#slideUp').on('click', function() {
+        // boxクラスの要素をスライドアップ
+        $('.box').slideUp();
+    });
+
+    // id属性がslideDownの要素がクリックされたら
+    $('#slideDown').on('click', function() {
+        // boxクラスの要素をスライドダウン
+        $('.box').slideDown();
+    });
+
+    // id属性がslideToggleの要素がクリックされたら
+    $('#slideToggle').on('click', function() {
+        // boxクラスの要素をスライド表示/非表示する
+        $('.box').slideToggle();
+    });
 });
